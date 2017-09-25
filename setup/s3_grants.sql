@@ -16,7 +16,7 @@ BEGIN
                                        privilege => 'resolve');
 
   DBMS_NETWORK_ACL_ADMIN.ASSIGN_ACL(acl  => 's3.xml',
-                                    host => '*.s3.amazonaws.com');
+                                    host => '*.amazonaws.com');
 END;
 /
 COMMIT;
