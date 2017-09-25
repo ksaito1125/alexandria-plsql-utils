@@ -1,5 +1,7 @@
+SET SERVEROUTPUT ON
+
 begin
-  amazon_aws_auth_pkg.init ('&1', '&2', p_gmt_offset => -1);
+  amazon_aws_auth_pkg.init ('&1', '&2', p_gmt_offset => 9);
 end;
 /
 
