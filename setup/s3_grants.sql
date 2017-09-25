@@ -1,6 +1,7 @@
 grant execute on dbms_crypto to &1;
 grant execute on sys.utl_file to &1;
 grant execute on sys.utl_http to &1;
+grant execute on sys.utl_tcp to &1;
 
 BEGIN
   DBMS_NETWORK_ACL_ADMIN.CREATE_ACL(acl         => 's3.xml',
